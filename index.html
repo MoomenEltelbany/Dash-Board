@@ -90,8 +90,8 @@
                     </li>
                 </ul>
             </aside>
-            <main class="content flex-1">
-                <header class="bg-white pt-5 px-8 flex justify-between">
+            <main class="content flex-1  ">
+                <header class="bg-white py-5 px-8 mb-8 flex justify-between">
                     <div class="flex items-center rounded-md pl-2 user-input">
                         <i class="pr-2 fa-solid fa-magnifying-glass"></i>
                         <input type="text" placeholder="Type a Keyword">
@@ -103,6 +103,47 @@
                         <img src="imgs/avatar.png" alt="">
                     </div>
                 </header>
+                <main class="px-8">
+                    <h2 class="text-3xl font-bold relative special-heading">Dashboard</h2>
+                    <div class="grid mt-10 dashboard">
+                        <div class="box bg-white welcome">
+                            <div class="p-5 flex justify-between greeting">
+                                <div class="name">
+                                    <p class="text-3xl mt-4 font-bold">Welcome</p>
+                                    <p class="mt-2 mb-4 text-lg">Moomen</p>
+                                </div>
+                                <img src="imgs/welcome.png" class="hidden md:block">
+                            </div>
+                            <div class="bg-white welcome-data">
+                                <img src="imgs/avatar.png">
+                                <div class="text-center flex justify-around flex-col md:flex-row gap-5 mb-8 py-5 data">
+                                    <div class="welcome-box">
+                                        <p class="mb-3">Moomen Eltelbany</p>
+                                        <p class="type">Developer</p>
+                                    </div>
+                                    <div class="welcome-box">
+                                        <p class="mb-3">80</p>
+                                        <p class="type">Projects</p>
+                                    </div>
+                                    <div class="welcome-box">
+                                        <p class="mb-3">$10.000</p>
+                                        <p class="type">Earned</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mr-5 mb-5 btn">Profile</p>
+                        </div>
+                        <div class="box bg-white">
+                            <div class="name">
+                                <p class="text-3xl mt-4 font-bold">Quick Draft</p>
+                                <p class="mt-2 mb-6 text-lg">Write a draft for your ideas</p>
+                            </div>
+                            <input type="text" placeholder="Title" class="mb-6">
+                            <textarea placeholder="Your thoughts" spellcheck="true"></textarea>
+                            <p class=" mt-5 btn">Save</p>
+                        </div>
+                    </div>
+                </main>
             </main>
         </div>
     </body>

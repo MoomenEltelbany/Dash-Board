@@ -18,6 +18,7 @@
     --green-color: #22c55e;
     --red-color: #f44336;
     --grey-color: #888;
+    --light-grey-color: #f1f5f9;
 }
 body {
     font-family: "Open Sans", sans-serif;
@@ -38,6 +39,66 @@ body {
     background-color: var(--blue-alt-color);
 }
 /* End General rules */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* Start general setting */
+.special-heading::before,
+.special-heading::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -10px;
+    height: 4px;
+}
+
+.special-heading::before {
+    width: 120px;
+    background-color: white;
+}
+.special-heading::after {
+    width: 60px;
+    background-color: black;
+}
+
+.box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.name p:nth-child(2) {
+    color: var(--grey-color);
+}
+
+.btn {
+    width: fit-content;
+    margin-left: auto;
+    color: white;
+    background-color: var(--blue-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.btn:hover {
+    background-color: var(--blue-alt-color);
+}
+
+.dashboard input,
+textarea {
+    background-color: #eee;
+    width: 100%;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+textarea {
+    padding: 5px 15px !important;
+    min-height: 180px;
+    max-height: 200px;
+    resize: none;
+}
+/* End general setting */
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
 /* Start the sidebar */
 .sidebar {
@@ -137,6 +198,9 @@ aside > h2::after {
 /* End the sidebar */
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
 /* Start the header part */
+.content {
+    background-color: #f1f5f9;
+}
 .content header .user-input {
     border: 1px solid var(--grey-color);
     color: var(--grey-color);
@@ -182,4 +246,49 @@ aside > h2::after {
     }
 }
 /* End the header part */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* Start the dashboard main page */
+.dashboard {
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    gap: 20px;
+}
+
+/* End the dashboard main page */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* Start the Welcome section inside the dashboard  */
+.welcome {
+    padding: 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.welcome .greeting {
+    background-color: #eee;
+}
+
+.welcome .greeting img {
+    padding-bottom: 16px;
+    width: 230px;
+}
+
+.welcome .welcome-data img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    position: relative;
+    top: -25px;
+    left: 20px;
+}
+
+.welcome .welcome-data .data {
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+
+.welcome .welcome-data .data .type {
+    color: var(--grey-color);
+}
+
+/* End the Welcome section inside the dashboard  */
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
