@@ -6,56 +6,104 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Dashboard</title>
+        <!-- Link of Favicon -->
+        <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+        <!-- Font awesome link -->
+        <link rel="stylesheet" href="css/all.min.css">
+        <!-- The main CSS file -->
         <link rel="stylesheet" href="css/style.css">
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+            rel="stylesheet">
+        <!-- Tailwind link -->
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
 
     <body>
-
-
-        <div class="flex mx-auto text-center">
-            <p class="bg-red-300 text-orange-400 max-w-md">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea
-                eveniet soluta
-                totam,
-                quas voluptate ad amet
-                laboriosam dolorem corrupti sed nam distinctio molestias error rem consequatur est optio dignissimos
-                hic. Repellendus quis odit saepe blanditiis pariatur! Voluptatum quae, doloribus ullam fugiat unde,
-                tempore, nobis veniam nisi vitae laudantium libero impedit dolore ratione dolorum et cum blanditiis
-                molestias sunt. Harum, quo. Libero nisi sequi, ipsam error repellendus sapiente! Neque, ducimus quas?
-                Sequi itaque consequuntur qui accusantium, laboriosam soluta a. Pariatur sed, tempora cumque modi
-                voluptatibus a explicabo consequatur laborum iure, tempore ea assumenda asperiores ipsa molestiae
-                tenetur odio provident aperiam voluptas molestias enim suscipit. Harum dolorem possimus dolorum, autem
-                provident iure doloribus corporis repellendus at ea, cumque enim aspernatur omnis id facere sunt ex
-                ipsum? Inventore, autem. Ducimus, architecto officiis ullam doloribus cumque repellat recusandae dolores
-                impedit dicta voluptates aliquam molestias, maiores quibusdam laborum. Laborum omnis, eligendi ad quia
-                sapiente numquam perspiciatis magnam facilis natus, sunt similique architecto cum, eum voluptas cumque
-                vitae explicabo laboriosam fugiat sed id placeat sit facere. In exercitationem voluptatem unde possimus
-                incidunt adipisci nisi, id maiores esse vitae quibusdam illum. Earum, quas nihil? Libero mollitia
-                debitis nulla laborum deserunt aspernatur consequatur tempora quaerat dignissimos temporibus itaque sed
-                voluptatem exercitationem autem excepturi, eligendi, ab aliquam magnam dolorum natus cum facilis,
-                ducimus harum. Iste amet impedit laudantium voluptate voluptates corporis illo possimus porro natus sed
-                facere provident at fugit, pariatur incidunt similique voluptatum culpa numquam excepturi adipisci,
-                saepe aut hic animi? Praesentium reprehenderit, nesciunt temporibus voluptates est nulla accusamus
-                recusandae explicabo quam beatae commodi deleniti voluptatem facilis magni tempore dolorem cupiditate?
-                Earum placeat dicta quae rem? Blanditiis atque impedit sequi accusantium, distinctio adipisci voluptatem
-                dolorem est a! Magni, nesciunt soluta dolorem natus commodi illum molestias asperiores facilis
-                accusantium eum atque, enim, amet iure pariatur harum ipsa ut. Aut ad consectetur tenetur ab error
-                quibusdam pariatur sint, reprehenderit eum ut in sed quia iusto. Similique, vitae, architecto veritatis
-                possimus excepturi soluta velit debitis sint dolore asperiores, repudiandae voluptatum provident iusto
-                eos unde? Quae exercitationem quaerat illum atque velit sequi molestiae accusamus ex odit consectetur
-                consequatur perferendis delectus error numquam hic, quis maiores minus ipsam dolores sunt. Sunt eius
-                corrupti, error quae reiciendis deleniti officia a nemo dolor suscipit. Dolorum commodi repellat
-                perferendis, fugiat sit harum ratione sapiente quasi porro soluta ex laboriosam perspiciatis illo quam
-                sint, animi repellendus. Ab consequuntur nam omnis pariatur voluptate unde minus esse numquam itaque
-                incidunt quam repudiandae, distinctio tenetur alias, quas, at adipisci perferendis dignissimos.
-                Dignissimos animi quae, quo vel cupiditate, officiis repellat corporis quaerat enim tempore deserunt.
-                Iusto dolore suscipit eaque animi perferendis exercitationem architecto officia rem, non quibusdam
-                excepturi iure, eveniet minima officiis ea ab illum repudiandae accusantium, delectus debitis! Corporis
-                a totam aliquid reiciendis quisquam, inventore ad ratione eligendi corrupti in voluptate adipisci
-                consequuntur ipsum, esse maiores nesciunt fuga. Architecto quaerat fugiat ullam itaque provident,
-                deserunt culpa eum neque, unde, in pariatur commodi maxime nostrum assumenda maiores dicta dignissimos
-                numquam accusantium adipisci dolores mollitia? Officia dolores, ad pariatur nulla praesentium voluptate.
-            </p>
+        <div class="page flex">
+            <aside class="md:w-60 sidebar pt-8 ">
+                <h2 class="relative w-full mx-auto text-center mb-14 sm:text-base md:text-xl uppercase font-bold
+                ">Infinite</h2>
+                <ul class="sidebar-list">
+                    <li class="flex items-center mb-3 text-base rounded-md cursor-pointer active">
+                        <a href="index.html" class="ml-3">
+                            <i class="fa-solid fa-chart-bar"></i>
+                            <span class="category">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="flex items-center mb-3 rounded-md cursor-pointer text-base ">
+                        <a href="settings.html" class="ml-3">
+                            <i class="fa-solid fa-gear"></i>
+                            <span class="category">Settings</span>
+                        </a>
+                    </li>
+                    <li class="flex items-center mb-3 rounded-md cursor-pointer text-base">
+                        <a href="profile.html" class="ml-3">
+                            <i class="fa-regular fa-user"></i>
+                            <span class="category">Profiles</span>
+                        </a>
+                    </li>
+                    <li class="flex items-center mb-3 rounded-md cursor-pointer text-base">
+                        <a href="projects.html" class="ml-3">
+                            <i class="fa-solid fa-diagram-project"></i>
+                            <span class="category">Projects</span>
+                        </a>
+                    </li>
+                    <li class="flex items-center mb-3 rounded-md cursor-pointer text-base">
+                        <a href="courses.html" class="ml-3">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span class="category">Courses</span>
+                        </a>
+                    </li>
+                    <li class="flex items-center mb-3 rounded-md cursor-pointer text-base">
+                        <a href="friends.html" class="ml-3">
+                            <i class="fa-regular fa-circle-user"></i>
+                            <span class="category">Friends</span>
+                        </a>
+                    </li>
+                    <li class="flex items-center mb-3 rounded-md cursor-pointer text-base">
+                        <a href="files.html" class="ml-3">
+                            <i class="fa-regular fa-file"></i>
+                            <span class="category">Files</span>
+                        </a>
+                    </li>
+                    <li class="flex items-center mb-3 rounded-md cursor-pointer text-base">
+                        <a href="plans.html" class="ml-3">
+                            <i class="fa-regular fa-credit-card"></i>
+                            <span class="category">Plans</span>
+                        </a>
+                    </li>
+                    <li class="flex items-center flex-wrap mb-3 rounded-md cursor-pointer text-base">
+                        <a href="#" class="ml-3">
+                            <i class="fa-solid fa-palette"></i>
+                            <span class="category">Colors</span>
+                        </a>
+                        <div class="flex justify-evenly gap-2 mt-4 py-3 px-5 rounded-md colors">
+                            <span class="active"></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </li>
+                </ul>
+            </aside>
+            <main class="content flex-1">
+                <header class="bg-white pt-5 px-8 flex justify-between">
+                    <div class="flex items-center rounded-md pl-2 user-input">
+                        <i class="pr-2 fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Type a Keyword">
+                    </div>
+                    <div class="flex items-center gap-3 user-photo">
+                        <span class="relative notification">
+                            <i class="cursor-pointer fa-regular fa-bell"></i>
+                        </span>
+                        <img src="imgs/avatar.png" alt="">
+                    </div>
+                </header>
+            </main>
         </div>
     </body>
 
