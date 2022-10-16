@@ -29,7 +29,7 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background-color: yellow;
+    background-color: white;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -248,7 +248,7 @@ aside > h2::after {
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
 /* Start the dashboard main page */
 .dashboard {
-    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     gap: 20px;
 }
 
@@ -417,4 +417,10 @@ aside > h2::after {
     }
 }
 /* End the Statistics Section */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* Start the News Section */
+.news .news-box img {
+    width: 150px;
+}
+/* End the News Section */
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
