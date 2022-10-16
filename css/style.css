@@ -424,3 +424,20 @@ aside > h2::after {
 }
 /* End the News Section */
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* Start the Tasks Section */
+.tasks i {
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.tasks i:hover {
+    color: var(--red-color);
+}
+
+.tasks .done {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+/* End the Tasks Section */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
