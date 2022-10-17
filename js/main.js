@@ -17,12 +17,10 @@
 // End the welcome count
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
 // Start the Adding task section
-let mainTask = document.querySelector(".tasks");
-let taskDiv = document.querySelector(".task");
+let taskDiv = document.querySelector(".task-container");
 let taskTitle = document.getElementById("title");
 let taskText = document.getElementById("text");
 let addTaskBtn = document.querySelector(".add-task");
-let deleteTask = document.querySelector(".del");
 
 addTaskBtn.onclick = () => {
     let mainDiv = document.createElement("div");
@@ -33,6 +31,8 @@ addTaskBtn.onclick = () => {
 
     divTitle.innerHTML = taskTitle.value;
     divText.innerHTML = taskText.value;
+    taskTitle.value = "";
+    taskText.value = "";
 
     mainDiv.classList.add(
         "mt-5",
@@ -43,24 +43,31 @@ addTaskBtn.onclick = () => {
         "border-b-2",
         "border-gray-100",
         "border-solid",
-        "tasks"
+        "task"
     );
 
     divTitle.classList.add("text-lg", "font-bold");
     divText.classList.add("text-lg", "text-gray-400");
 
-    deleteFigure.classList.add("fa-regular", "fa-trash-can");
+    deleteFigure.classList.add("fa-regular", "fa-trash-can", "mr-2", "del");
 
     div.appendChild(divTitle);
     div.appendChild(divText);
     mainDiv.appendChild(div);
     mainDiv.appendChild(deleteFigure);
     taskDiv.appendChild(mainDiv);
+
+    let allTasks = document.querySelectorAll(".task");
+    let deleteTask = document.querySelectorAll(".task .del");
+
+    deleteTask.forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+            e.target.parentElement.classList.toggle("done");
+        });
+    });
 };
 
-deleteTask.onclick = () => {
-    console.log(mainTask);
-    // mainTask.classList.toggle("done");
-};
+// taskRemove();
+
 // End the Adding task section
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */

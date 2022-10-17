@@ -425,7 +425,11 @@ aside > h2::after {
 /* End the News Section */
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
 /* Start the Tasks Section */
-.tasks i {
+.task-container {
+    overflow: auto;
+    max-height: 480px;
+}
+.tasks .del {
     font-size: 20px;
     cursor: pointer;
     transition: 0.3s;
