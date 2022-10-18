@@ -429,6 +429,21 @@ aside > h2::after {
     overflow: auto;
     max-height: 480px;
 }
+
+.title-error,
+.text-error {
+    display: none !important;
+}
+
+.tasks .add-task {
+    user-select: none;
+    opacity: 0.5;
+}
+
+.tasks .add-task:hover {
+    opacity: 1;
+}
+
 .tasks .del {
     font-size: 20px;
     cursor: pointer;
@@ -440,7 +455,7 @@ aside > h2::after {
 }
 
 .tasks .done {
-    text-decoration: line-through;
+    text-decoration: line-through !important;
     opacity: 0.5;
 }
 /* End the Tasks Section */

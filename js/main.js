@@ -17,26 +17,55 @@
 // End the welcome count
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
 // Start the Adding task section
+// Capturing the elements
 let taskDiv = document.querySelector(".task-container");
 let taskTitle = document.getElementById("title");
 let taskText = document.getElementById("text");
 let addTaskBtn = document.querySelector(".add-task");
+let titleErrorSpan = document.querySelector(".title-error");
+let textErrorSpan = document.querySelector(".text-error");
 
+// Array that will hold the tasks
 let arrayOfTasks = [];
 
+// Check if the title and text inputs aren't empty
+taskTitle.onblur = () => {
+    if (taskTitle.value === "") {
+        titleErrorSpan.style.cssText = "display: block !important;";
+    } else {
+        titleErrorSpan.style.cssText = "display: none !important;";
+    }
+};
+taskText.onblur = () => {
+    if (taskText.value === "") {
+        textErrorSpan.style.cssText = "display: block !important;";
+    } else {
+        textErrorSpan.style.cssText = "display: none !important;";
+    }
+};
+
+// Onclick on the add button
 addTaskBtn.onclick = () => {
-    let taskObject = {
-        title: taskTitle.value,
-        text: taskText.value,
-    };
+    // If both of the inputs are empty, nothing will happen
+    if (taskTitle.value !== "" && taskText.value !== "") {
+        let taskObject = {
+            title: taskTitle.value,
+            text: taskText.value,
+            completed: false,
+        };
 
-    arrayOfTasks.push(taskObject);
-    taskTitle.value = "";
-    taskText.value = "";
+        arrayOfTasks.push(taskObject);
+        taskTitle.value = "";
+        taskText.value = "";
 
-    createDivs(arrayOfTasks);
+        // Creating the divs
+        createDivs(arrayOfTasks);
 
-    removeDiv();
+        // Function of deleting the task
+        removeDiv(arrayOfTasks);
+
+        console.log(arrayOfTasks);
+    }
 };
 
 function createDivs(array) {
@@ -74,11 +103,12 @@ function createDivs(array) {
         div.appendChild(divText);
         mainDiv.appendChild(div);
         mainDiv.appendChild(deleteFigure);
+
         taskDiv.appendChild(mainDiv);
     }
 }
 
-function removeDiv() {
+function removeDiv(array) {
     let deleteTask = document.querySelectorAll(".task .del");
 
     deleteTask.forEach((btn) => {
