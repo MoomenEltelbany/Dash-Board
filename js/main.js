@@ -22,50 +22,76 @@ let taskTitle = document.getElementById("title");
 let taskText = document.getElementById("text");
 let addTaskBtn = document.querySelector(".add-task");
 
-addTaskBtn.onclick = () => {
-    let mainDiv = document.createElement("div");
-    let div = document.createElement("div");
-    let divTitle = document.createElement("p");
-    let divText = document.createElement("p");
-    let deleteFigure = document.createElement("i");
+let arrayOfTasks = [];
 
-    divTitle.innerHTML = taskTitle.value;
-    divText.innerHTML = taskText.value;
+addTaskBtn.onclick = () => {
+    let taskObject = {
+        title: taskTitle.value,
+        text: taskText.value,
+    };
+
+    arrayOfTasks.push(taskObject);
     taskTitle.value = "";
     taskText.value = "";
 
-    mainDiv.classList.add(
-        "mt-5",
-        "pb-2",
-        "flex",
-        "justify-between",
-        "items-center",
-        "border-b-2",
-        "border-gray-100",
-        "border-solid",
-        "task"
-    );
+    createDivs(arrayOfTasks);
 
-    divTitle.classList.add("text-lg", "font-bold");
-    divText.classList.add("text-lg", "text-gray-400");
+    removeDiv();
+};
 
-    deleteFigure.classList.add("fa-regular", "fa-trash-can", "mr-2", "del");
+function createDivs(array) {
+    taskDiv.innerHTML = "";
+    for (let i = 0; i < array.length; i++) {
+        let mainDiv = document.createElement("div");
+        let div = document.createElement("div");
+        let divTitle = document.createElement("p");
+        let divText = document.createElement("p");
+        let deleteFigure = document.createElement("i");
 
-    div.appendChild(divTitle);
-    div.appendChild(divText);
-    mainDiv.appendChild(div);
-    mainDiv.appendChild(deleteFigure);
-    taskDiv.appendChild(mainDiv);
+        mainDiv.classList.add(
+            "mt-5",
+            "pb-2",
+            "flex",
+            "justify-between",
+            "items-center",
+            "border-b-2",
+            "border-gray-100",
+            "border-solid",
+            "task"
+        );
 
-    let allTasks = document.querySelectorAll(".task");
+        mainDiv.setAttribute("data-id", `div_${i}`);
+        deleteFigure.setAttribute("data-id", `div_${i}`);
+
+        divTitle.classList.add("text-lg", "font-bold");
+        divText.classList.add("text-lg", "text-gray-400");
+
+        deleteFigure.classList.add("fa-regular", "fa-trash-can", "mr-2", "del");
+
+        divTitle.appendChild(document.createTextNode(array[i].title));
+        divText.appendChild(document.createTextNode(array[i].text));
+        div.appendChild(divTitle);
+        div.appendChild(divText);
+        mainDiv.appendChild(div);
+        mainDiv.appendChild(deleteFigure);
+        taskDiv.appendChild(mainDiv);
+    }
+}
+
+function removeDiv() {
     let deleteTask = document.querySelectorAll(".task .del");
 
     deleteTask.forEach((btn) => {
-        btn.addEventListener("click", (e) => {
-            e.target.parentElement.classList.toggle("done");
-        });
+        btn.onclick = () => {
+            let allTasks = document.querySelectorAll(".task");
+            allTasks.forEach((task) => {
+                if (task.dataset.id === btn.dataset.id) {
+                    task.classList.toggle("done");
+                }
+            });
+        };
     });
-};
+}
 
 // taskRemove();
 
