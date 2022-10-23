@@ -455,7 +455,7 @@ aside > h2::after {
 }
 
 .tasks .done {
-    text-decoration: line-through !important;
+    text-decoration: line-through !important    ;
     opacity: 0.5;
 }
 /* End the Tasks Section */
