@@ -470,6 +470,7 @@ aside > h2::after {
 .progress .big-circle,
 .big-circle-special {
     display: inline-block;
+    min-width: 30px;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -478,7 +479,17 @@ aside > h2::after {
     position: relative;
 }
 
-.progress .big-circle::before {
+.latest-progress .line::before {
+    content: "";
+    position: absolute;
+    left: 15px;
+    top: 0;
+    width: 2px;
+    height: calc(100% - 30px);
+    background-color: var(--blue-color);
+}
+
+/* .progress .big-circle::before {
     content: "";
     position: absolute;
     height: 42px;
@@ -487,7 +498,7 @@ aside > h2::after {
     transform: translateX(-50%);
     bottom: -42px;
     background-color: var(--blue-color);
-}
+} */
 
 .progress .big-circle .small-circle,
 .small-circle-special {
@@ -541,34 +552,38 @@ aside > h2::after {
 .reminder-box .reminder-circle {
     display: inline-block;
     margin-right: 30px;
+    min-width: 20px;
     width: 20px;
     height: 20px;
     border-radius: 50%;
 }
-.reminder-box .reminder-circle.blue,
-.reminder-box .reminder-text.blue::before {
+
+.reminder-box .reminder-text.blue {
+    border-left: 2px solid var(--blue-color);
+}
+.reminder-box .reminder-circle.blue {
     background-color: var(--blue-color);
 }
-.reminder-box .reminder-circle.green,
-.reminder-box .reminder-text.green::before {
+
+.reminder-box .reminder-text.green {
+    border-left: 2px solid var(--green-color);
+}
+.reminder-box .reminder-circle.green {
     background-color: var(--green-color);
 }
-.reminder-box .reminder-circle.orange,
-.reminder-box .reminder-text.orange::before {
+
+.reminder-box .reminder-text.orange {
+    border-left: 2px solid var(--orange-color);
+}
+.reminder-box .reminder-circle.orange {
     background-color: var(--orange-color);
 }
-.reminder-box .reminder-circle.red,
-.reminder-box .reminder-text.red::before {
-    background-color: var(--red-color);
-}
 
-.reminder-box .reminder-text::before {
-    content: "";
-    position: absolute;
-    left: -15px;
-    top: 0;
-    width: 3px;
-    height: 100%;
+.reminder-box .reminder-text.red {
+    border-left: 2px solid var(--red-color);
+}
+.reminder-box .reminder-circle.red {
+    background-color: var(--red-color);
 }
 
 /* End the Reminder Section */
