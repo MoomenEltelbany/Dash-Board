@@ -489,17 +489,6 @@ aside > h2::after {
     background-color: var(--blue-color);
 }
 
-/* .progress .big-circle::before {
-    content: "";
-    position: absolute;
-    height: 42px;
-    width: 2px;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -42px;
-    background-color: var(--blue-color);
-} */
-
 .progress .big-circle .small-circle,
 .small-circle-special {
     display: inline-block;
