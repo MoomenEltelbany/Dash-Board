@@ -745,7 +745,7 @@ aside > h2::after {
 }
 
 table {
-    /* min-width: 1000px; */
+    min-width: 1000px;
 }
 
 table tbody td img {
