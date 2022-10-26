@@ -603,22 +603,18 @@ aside > h2::after {
 /* End the Latest post Section */
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
 /* Start the Social Media Section */
-.social-media .twitter .twitter-icon {
-    background-color: rgb(29, 161, 242);
+.social-media a {
+    border-radius: 6px;
 }
 
-.social-media .twitter-icon:hover,
-.social-media .facebook-icon:hover,
-.social-media .youtube-icon:hover,
-.social-media .linkedin-icon:hover,
-.social-media .github-icon:hover {
-    transform: rotate(3deg);
-}
-
-.social-media .twitter {
-    color: rgb(29, 161, 242);
-    background-color: rgba(29, 161, 242, 0.3);
-    transition: 0.7s;
+.social-media i {
+    width: 55px;
+    font-size: 32px;
+    display: grid;
+    place-items: center;
+    padding: 12px;
+    position: relative;
+    z-index: 5;
 }
 
 .social-media p,
@@ -628,24 +624,18 @@ aside > h2::after {
     transition: 0.8s;
 }
 
-.social-media .twitter a {
-    background-color: rgb(29, 161, 242);
-}
-
 .social-media .twitter::before,
 .social-media .facebook::before,
-.social-media .youtube::before {
+.social-media .youtube::before,
+.social-media .linkedin::before,
+.social-media .github::before {
     content: "";
     position: absolute;
-    left: 56px;
+    left: 30px;
     top: 0;
     width: 0%;
     height: 100%;
     transition: 0.8s;
-}
-
-.social-media .twitter::before {
-    background-color: rgba(29, 160, 242, 0.7);
 }
 
 .social-media .social-text:hover::before,
@@ -654,6 +644,31 @@ aside > h2::after {
     color: white;
 }
 
+.social-media .twitter {
+    color: rgb(29, 161, 242);
+    background-color: rgba(29, 161, 242, 0.3);
+}
+
+.social-media .twitter::before {
+    background-color: rgba(29, 160, 242, 0.7);
+}
+
+.social-media .twitter a {
+    background-color: rgb(29, 161, 242);
+}
+
+.social-media .twitter i {
+    background-color: rgb(29, 161, 242);
+}
+
+.social-media .facebook {
+    color: rgb(24, 119, 242);
+    background-color: rgba(24, 119, 242, 0.3);
+}
+
+.social-media .facebook a {
+    background-color: rgb(24, 119, 242);
+}
 .social-media .facebook i {
     background-color: rgb(24, 119, 242);
 }
@@ -661,6 +676,16 @@ aside > h2::after {
 .social-media .facebook::before {
     background-color: rgba(24, 119, 242, 0.7);
 }
+
+.social-media .youtube {
+    color: red;
+    background-color: rgba(255, 0, 0, 0.3);
+}
+
+.social-media .youtube.social-text a {
+    background-color: red;
+}
+
 .social-media .youtube i {
     background-color: red;
 }
@@ -669,110 +694,43 @@ aside > h2::after {
     background-color: rgba(255, 0, 0, 0.7);
 }
 
-@media (min-width: 767px) {
-    .social-media .social-text a {
-        min-width: 90px;
-    }
-}
-/* .social-media .twitter.social-text::before,
-.social-media .facebook.social-text::before,
-.social-media .youtube.social-text::before,
-.social-media .linkedin.social-text::before,
-.social-media .github.social-text::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 0%;
-    height: 100%;
-    transition: 0.7s;
-} */
-
-/* .social-media.twitter::before {
-    background-color: rgb(29, 161, 242);
-}
-.social-media .facebook.social-text::before {
-    background-color: rgb(24, 119, 242);
-}
-.social-media .youtube.social-text::before {
-    background-color: red;
-}
-.social-media .linkedin.social-text::before {
-    background-color: rgb(0, 119, 181);
-}
-.social-media .github.social-text::before {
-    background-color: black;
-}
-
-.social-media .twitter:hover,
-.social-media .facebook:hover,
-.social-media .youtube:hover,
-.social-media .linkedin:hover,
-.social-media .github:hover {
-    color: white;
-}
-
-.social-media.social-text:hover::before {
-    width: 100%;
-}
-
-.social-media .twitter.social-text a {
-    background-color: rgb(29, 161, 242);
-    border-radius: 6px;
-} */
-
-.social-media .facebook-icon {
-    background-color: rgb(24, 119, 242);
-}
-
-.social-media .facebook.social-text {
-    color: rgb(24, 119, 242);
-    background-color: rgba(24, 119, 242, 0.3);
-}
-
-.social-media .facebook.social-text a {
-    background-color: rgb(24, 119, 242);
-    border-radius: 6px;
-}
-
-.social-media .youtube-icon {
-    background-color: rgb(255, 0, 0);
-}
-
-.social-media .youtube.social-text {
-    color: red;
-    background-color: rgba(255, 0, 0, 0.3);
-}
-
-.social-media .youtube.social-text a {
-    background-color: red;
-    border-radius: 6px;
-}
-.social-media .linkedin-icon {
-    background-color: rgb(0, 119, 181);
-}
-
-.social-media .linkedin.social-text {
+.social-media .linkedin {
     color: rgb(0, 119, 181);
     background-color: rgba(0, 119, 181, 0.3);
 }
 
-.social-media .linkedin.social-text a {
+.social-media .linkedin a {
     background-color: rgb(0, 119, 181);
-    border-radius: 6px;
-}
-.social-media .github-icon {
-    background-color: black;
 }
 
-.social-media .github.social-text {
-    color: black;
+.social-media .linkedin i {
+    background-color: rgb(0, 119, 181);
+}
+
+.social-media .linkedin::before {
+    background-color: rgba(0, 119, 181, 0.7);
+}
+
+.social-media .github {
     background-color: rgba(0, 0, 0, 0.3);
 }
 
-.social-media .github.social-text a {
+.social-media .github a {
     background-color: black;
-    border-radius: 6px;
+}
+
+.social-media .github i {
+    background-color: black;
+}
+
+.social-media .github::before {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+@media (min-width: 767px) {
+    .social-media .social-text a {
+        min-width: 100px;
+    }
 }
 /* End the Social Media Section */
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
