@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Settings</title>
+        <!-- Link of Favicon -->
+        <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+        <!-- Font awesome link -->
+        <link rel="stylesheet" href="css/all.min.css">
+        <!-- The main CSS file -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+            rel="stylesheet">
+        <!-- Tailwind link -->
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+    <body>
+        <div class="page flex">
+            <aside class="md:w-60 sidebar pt-8 sticky top-0">
+                <h2 class="relative w-full mx-auto text-center mb-14 sm:text-base md:text-xl uppercase font-bold
+                ">Infinite</h2>
+                <ul class="sidebar-list">
+                    <li class="flex items-center mb-3 text-base rounded-md cursor-pointer ">
+                        <a href="index.html" class="ml-3">
+                            <i class="fa-solid fa-chart-bar"></i>
+                            <span class="category">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="flex items-center mb-3 rounded-md cursor-pointer text-base active">
+                        <a href="settings.html" class="ml-3">
+                            <i class="fa-solid fa-gear"></i>
+                            <span class="category">Settings</span>
+                        </a>
+                    </li>
+                    <li class="flex items-center mb-3 rounded-md cursor-pointer text-base">
+                        <a href="profile.html" class="ml-3">
+                            <i class="fa-regular fa-user"></i>
+                            <span class="category">Profiles</span>
+                        </a>
+                    </li>
+                    <li class="flex items-center mb-3 rounded-md cursor-pointer text-base">
+                        <a href="projects.html" class="ml-3">
+                            <i class="fa-solid fa-diagram-project"></i>
+                            <span class="category">Projects</span>
+                        </a>
+                    </li>
+                    <li class="flex items-center mb-3 rounded-md cursor-pointer text-base">
+                        <a href="courses.html" class="ml-3">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span class="category">Courses</span>
+                        </a>
+                    </li>
+                    <li class="flex items-center mb-3 rounded-md cursor-pointer text-base">
+                        <a href="friends.html" class="ml-3">
+                            <i class="fa-regular fa-circle-user"></i>
+                            <span class="category">Friends</span>
+                        </a>
+                    </li>
+                    <li class="flex items-center mb-3 rounded-md cursor-pointer text-base">
+                        <a href="files.html" class="ml-3">
+                            <i class="fa-regular fa-file"></i>
+                            <span class="category">Files</span>
+                        </a>
+                    </li>
+                    <li class="flex items-center mb-3 rounded-md cursor-pointer text-base">
+                        <a href="plans.html" class="ml-3">
+                            <i class="fa-regular fa-credit-card"></i>
+                            <span class="category">Plans</span>
+                        </a>
+                    </li>
+                    <li class="flex items-center flex-wrap mb-3 rounded-md cursor-pointer text-base">
+                        <a href="#" class="ml-3">
+                            <i class="fa-solid fa-palette"></i>
+                            <span class="category">Colors</span>
+                        </a>
+                        <div class="flex justify-evenly gap-2 mt-4 py-3 px-5 rounded-md colors">
+                            <span class="active"></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </li>
+                </ul>
+            </aside>
+            <main class="content w-full overflow-hidden">
+                <header class="bg-white py-5 px-8 mb-8 flex justify-between">
+                    <div class="flex items-center rounded-md pl-2 user-input">
+                        <i class="pr-2 fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Type a Keyword">
+                    </div>
+                    <div class="flex items-center gap-3 user-photo">
+                        <span class="relative notification">
+                            <i class="cursor-pointer fa-regular fa-bell"></i>
+                        </span>
+                        <img src="imgs/avatar.png" alt="">
+                    </div>
+                </header>
+                <h2 class="pl-5 mb-8 text-3xl font-bold relative special-heading">Settings</h2>
+                <div class="p-3 md:p-5 grid gap-5 settings-page">
+                    <div class="box bg-white site">
+                        <div class="name">
+                            <p class="text-3xl mt-4 font-bold">Site Control</p>
+                            <p class="mt-2 mb-6 text-lg">Control the website if there are any maintenance</p>
+                        </div>
+                        <div class="mb-5 flex justify-between site-control">
+                            <div>
+                                <p class="text-lg mb-3">Website control</p>
+                                <p class="text-gray-400">Open/Close website and type the reason</p>
+                            </div>
+                            <label>
+                                <input class="toggle-box" type="checkbox">
+                                <div class="toggle-switch"></div>
+                            </label>
+                        </div>
+                        <textarea placeholder="Close message content"></textarea>
+                    </div>
+                    <div class="box bg-white general-info">
+                        <div class="name">
+                            <p class="text-3xl mt-4 font-bold">General Information</p>
+                            <p class="mt-2 mb-6 text-lg">General information about your account</p>
+                        </div>
+                        <div class="mb-4 info-box">
+                            <p class="text-gray-400 mb-2 text-lg">First Name</p>
+                            <input type="text" placeholder="First Name"
+                                class="border-solid border-gray-400 w-full rounded-md p-2">
+                        </div>
+                        <div class="mb-4 info-box">
+                            <p class="text-gray-400 mb-2 text-lg">Last Name</p>
+                            <input type="text" placeholder="Last Name"
+                                class="border-solid border-gray-400 w-full rounded-md p-2">
+                        </div>
+                        <div class=" info-box">
+                            <p class="text-gray-400 mb-2 text-lg">Email</p>
+                            <div class="flex justify-center items-center">
+                                <input type="email" placeholder="example@gmail.com"
+                                    class="border-solid border-gray-400 w-full rounded-md p-2 cursor-no-drop" disabled>
+                                <span class="ml-3 text-lg text-blue-500">Change</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </main>
+        </div>
+        <script src="js/main.js"></script>
+    </body>
+
+</html>

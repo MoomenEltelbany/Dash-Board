@@ -132,27 +132,20 @@ let selectGroups = document.querySelectorAll("select");
 
 let selectGroupsArray = Array.from(selectGroups);
 
-window.onload = () => {
-    window.localStorage.setItem("text", select.value);
-    selectGroupsArray.forEach((select) => {
-        console.log(select.value);
-        select.value = window.localStorage.getItem("text");
-    });
-    for (let i = 0; i < 6; i++) {
-        selectGroupsArray[i].classList.remove(
-            "pending",
-            "in-progress",
-            "completed",
-            "rejected"
-        );
+for (let i = 0; i < 6; i++) {
+    selectGroupsArray[i].classList.remove(
+        "pending",
+        "in-progress",
+        "completed",
+        "rejected"
+    );
 
-        selectGroupsArray[i].classList.add(
-            window.localStorage.getItem(`select-${i}`)
-        );
+    selectGroupsArray[i].classList.add(
+        window.localStorage.getItem(`select-${i}`)
+    );
 
-        selectGroupsArray[i].value = window.localStorage.getItem(`select-${i}`);
-    }
-};
+    selectGroupsArray[i].value = window.localStorage.getItem(`select-${i}`);
+}
 
 selectGroupsArray.forEach((select) => {
     select.onchange = () => {

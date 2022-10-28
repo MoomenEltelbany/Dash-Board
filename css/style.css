@@ -11,6 +11,10 @@
     outline: none;
 }
 
+*:disabled {
+    background-color: #ebeff4;
+}
+
 :root {
     --blue-color: #0075ff;
     --blue-alt-color: #0d69d5;
@@ -96,6 +100,48 @@ textarea {
     padding: 5px 15px !important;
     min-height: 180px;
     resize: none !important;
+}
+
+.toggle-box {
+    appearance: none;
+}
+
+.toggle-switch {
+    background-color: #ccc;
+    width: 78px;
+    height: 32px;
+    border-radius: 16px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.toggle-switch::before {
+    font: var(--fa-font-solid);
+    content: "\f00d";
+    font-weight: 900;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: white;
+    color: #aaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.toggle-box:checked + .toggle-switch {
+    background-color: var(--blue-color);
+}
+
+.toggle-box:checked + .toggle-switch::before {
+    content: "\f00c";
+    left: 50px;
+    color: var(--blue-color);
 }
 /* End general setting */
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
@@ -808,4 +854,21 @@ table tbody td select.rejected {
 }
 
 /* End the Project Table Section */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/*-=-=-=--=-=-=- Start the Settings Page -=-=-=--=-=-=-  */
+.settings-page {
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
+@media (max-width: 767px) {
+    .settings-page {
+        grid-template-columns: minmax(150px, 1fr);
+        gap: 10px;
+    }
+}
+
+.settings-page input {
+    border-width: 1px;
+}
+/*-=-=-=--=-=-=- End the Settings Page -=-=-=--=-=-=-  */
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
