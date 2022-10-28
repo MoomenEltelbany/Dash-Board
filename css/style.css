@@ -870,5 +870,11 @@ table tbody td select.rejected {
 .settings-page input {
     border-width: 1px;
 }
+
+/* Start the Security Box Section */
+.security .security-box:not(:last-of-type) {
+    border-bottom: 1px solid var(--light-grey-color);
+}
+/* End the Security Box Section */
 /*-=-=-=--=-=-=- End the Settings Page -=-=-=--=-=-=-  */
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
