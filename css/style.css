@@ -746,13 +746,19 @@ aside > h2::after {
 }
 
 table {
-    min-width: 1000px;
+    min-width: 1200px;
+    border-spacing: 0;
 }
 
 table tbody td {
     border-left: 1px solid #eee;
     border-bottom: 1px solid #eee;
     padding: 15px;
+    transition: 0.5s;
+}
+
+table tbody tr:hover td {
+    background-color: #faf7f7;
 }
 
 table tbody tr td:last-child {
