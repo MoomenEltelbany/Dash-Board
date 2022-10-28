@@ -790,6 +790,10 @@ table tbody td select {
     border-radius: 6px;
 }
 
+table tbody td select {
+    background-color: black;
+}
+
 table tbody td select.pending {
     background-color: var(--orange-color);
 }

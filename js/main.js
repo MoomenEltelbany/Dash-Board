@@ -132,6 +132,28 @@ let selectGroups = document.querySelectorAll("select");
 
 let selectGroupsArray = Array.from(selectGroups);
 
+selectGroups.forEach((select) => {
+    // select.classList.remove("pending", "in-progress", "completed", "rejected");
+    select.value = "No-Status";
+});
+
+window.onload = () => {
+    for (let i = 0; i < 6; i++) {
+        selectGroupsArray[i].classList.remove(
+            "pending",
+            "in-progress",
+            "completed",
+            "rejected"
+        );
+
+        selectGroupsArray[i].classList.add(
+            window.localStorage.getItem(`select-${i}`)
+        );
+
+        selectGroupsArray[i].value = window.localStorage.getItem(`select-${i}`);
+    }
+};
+
 selectGroupsArray.forEach((select) => {
     select.onchange = () => {
         // Remove all the classes that are responsible for the background of the select group
@@ -145,9 +167,10 @@ selectGroupsArray.forEach((select) => {
         // Add the class to the select element
         select.classList.add(select.value);
 
-        window.localStorage.setItem("selectColor", select.value);
+        window.localStorage.setItem(select.dataset.set, select.value);
     };
 });
 
+// window.localStorage.clear();
 // End the Select group in the table
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
