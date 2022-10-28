@@ -130,30 +130,24 @@ function removeDiv(array) {
 // Start the Select group in the table
 let selectGroups = document.querySelectorAll("select");
 
-window.onload = () => {
-    if (window.localStorage.getItem("selectColor")) {
-        addColor();
-    }
-};
+let selectGroupsArray = Array.from(selectGroups);
 
-// selectGroup.onchange = () => {
-//     addColor();
+selectGroupsArray.forEach((select) => {
+    select.onchange = () => {
+        // Remove all the classes that are responsible for the background of the select group
+        select.classList.remove(
+            "pending",
+            "in-progress",
+            "completed",
+            "rejected"
+        );
 
-//     window.localStorage.setItem("selectColor", selectGroup.value);
-// };
+        // Add the class to the select element
+        select.classList.add(select.value);
 
-function addColor() {
-    // Remove all the classes that are responsible for the background of the select group
-    selectGroup.classList.remove(
-        "pending",
-        "in-progress",
-        "completed",
-        "rejected"
-    );
+        window.localStorage.setItem("selectColor", select.value);
+    };
+});
 
-    // Add the class to the select element
-    selectGroup.classList.add(selectGroup.value);
-}
-// window.localStorage.clear();
 // End the Select group in the table
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
