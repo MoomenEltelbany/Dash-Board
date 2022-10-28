@@ -127,3 +127,33 @@ function removeDiv(array) {
 
 // End the Adding task section
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+// Start the Select group in the table
+let selectGroups = document.querySelectorAll("select");
+
+window.onload = () => {
+    if (window.localStorage.getItem("selectColor")) {
+        addColor();
+    }
+};
+
+// selectGroup.onchange = () => {
+//     addColor();
+
+//     window.localStorage.setItem("selectColor", selectGroup.value);
+// };
+
+function addColor() {
+    // Remove all the classes that are responsible for the background of the select group
+    selectGroup.classList.remove(
+        "pending",
+        "in-progress",
+        "completed",
+        "rejected"
+    );
+
+    // Add the class to the select element
+    selectGroup.classList.add(selectGroup.value);
+}
+// window.localStorage.clear();
+// End the Select group in the table
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */

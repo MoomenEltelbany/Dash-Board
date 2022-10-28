@@ -748,15 +748,52 @@ table {
     min-width: 1000px;
 }
 
+table tbody td {
+    border-left: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    padding: 15px;
+}
+
+table tbody tr td:last-child {
+    border-right: 1px solid #eee;
+}
+
 table tbody td img {
+    position: relative;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     border: 1px solid white;
+    cursor: pointer;
+    display: inline-block;
+}
+
+table tbody td img:hover {
+    z-index: 2;
 }
 
 table tbody td img:not(:first-of-type) {
     margin-left: -20px;
 }
+
+table tbody td select {
+    color: white;
+    padding: 12px;
+    border-radius: 6px;
+}
+
+table tbody td select.pending {
+    background-color: var(--orange-color);
+}
+table tbody td select.in-progress {
+    background-color: var(--blue-color);
+}
+table tbody td select.completed {
+    background-color: var(--green-color);
+}
+table tbody td select.rejected {
+    background-color: var(--red-color);
+}
+
 /* End the Project Table Section */
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
