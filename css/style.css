@@ -790,8 +790,8 @@ table tbody td select {
     border-radius: 6px;
 }
 
-table tbody td select {
-    background-color: black;
+table tbody td select.no-status {
+    background-color: rgb(124, 124, 124);
 }
 
 table tbody td select.pending {

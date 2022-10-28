@@ -132,12 +132,12 @@ let selectGroups = document.querySelectorAll("select");
 
 let selectGroupsArray = Array.from(selectGroups);
 
-selectGroups.forEach((select) => {
-    // select.classList.remove("pending", "in-progress", "completed", "rejected");
-    select.value = "No-Status";
-});
-
 window.onload = () => {
+    window.localStorage.setItem("text", select.value);
+    selectGroupsArray.forEach((select) => {
+        console.log(select.value);
+        select.value = window.localStorage.getItem("text");
+    });
     for (let i = 0; i < 6; i++) {
         selectGroupsArray[i].classList.remove(
             "pending",
@@ -161,7 +161,8 @@ selectGroupsArray.forEach((select) => {
             "pending",
             "in-progress",
             "completed",
-            "rejected"
+            "rejected",
+            "no-status"
         );
 
         // Add the class to the select element
