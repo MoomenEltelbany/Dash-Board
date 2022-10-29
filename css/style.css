@@ -949,7 +949,7 @@ table tbody td select.rejected {
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
 /* Start the Backup Manager Section */
 .backup .backup-time {
-    border-bottom: 1px solid var(--light-grey-color);
+    border-bottom: 1px solid #ddd;
 }
 
 .backup .backup-time-box input {
@@ -989,6 +989,21 @@ table tbody td select.rejected {
 .backup .backup-time-box input:checked + label::after {
     transform: scale(1);
 }
+
+.backup .backup-package-box {
+    border: 1px solid #ddd;
+    min-width: calc((100% - 60px) / 3);
+}
+
+.backup .backup-package-box.active {
+    border-color: var(--blue-color);
+    color: var(--blue-color);
+}
+
+.backup .backup-package-box i {
+    font-size: 20px;
+}
+
 /* End the Backup Manager Section */
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
 /*-=-=-=--=-=-=- End the Settings Page -=-=-=--=-=-=-  */
