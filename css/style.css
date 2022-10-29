@@ -855,8 +855,8 @@ table tbody td select.rejected {
 }
 
 /* End the Project Table Section */
-/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
 /*-=-=-=--=-=-=- Start the Settings Page -=-=-=--=-=-=-  */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
 .settings-page {
     grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
 }
@@ -877,5 +877,74 @@ table tbody td select.rejected {
     border-bottom: 1px solid var(--light-grey-color);
 }
 /* End the Security Box Section */
-/*-=-=-=--=-=-=- End the Settings Page -=-=-=--=-=-=-  */
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* Start the Social Information Section */
+.settings-page .social-info .social-box i {
+    font-size: 22px;
+    background-color: #f6f6f6;
+    border: 1px solid #ddd;
+    border-right: none;
+    border-radius: 6px 0 0 6px;
+    transition: 0.3s;
+}
+
+.settings-page .social-info .social-box input {
+    background-color: #f6f6f6;
+    border: 1px solid #ddd;
+    border-radius: 0 6px 6px 0;
+}
+
+.social-info .social-box:focus-within > i.twitter {
+    color: rgb(29, 161, 242);
+}
+.social-info .social-box:focus-within > i.facebook {
+    color: rgb(24, 119, 242);
+}
+.social-info .social-box:focus-within > i.youtube {
+    color: red;
+}
+.social-info .social-box:focus-within > i.linkedin {
+    color: rgb(0, 119, 181);
+}
+/* End the Social Information Section */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* Start the Widget Control Section */
+.settings-page .widgets .widget-option input {
+    display: none;
+}
+
+.settings-page .widgets .widget-option label::before,
+.settings-page .widgets .widget-option label::after {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    left: 0;
+    top: 50%;
+    margin-top: -7px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.settings-page .widgets .widget-option label::before {
+    content: "";
+    border: 1px solid var(--grey-color);
+}
+
+.settings-page .widgets .widget-option label::after {
+    font: var(--fa-font-solid);
+    content: "\f00c";
+    font-weight: 900;
+    font-size: 10px;
+    background-color: var(--blue-color);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(0) rotate(360deg);
+}
+.settings-page .widgets .widget-option input:checked + label::after {
+    transform: scale(1);
+}
+/* End the Widget Control Section */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/*-=-=-=--=-=-=- End the Settings Page -=-=-=--=-=-=-  */
