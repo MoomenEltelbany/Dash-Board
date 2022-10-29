@@ -165,6 +165,5 @@ selectGroupsArray.forEach((select) => {
     };
 });
 
-// window.localStorage.clear();
 // End the Select group in the table
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */

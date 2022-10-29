@@ -993,6 +993,7 @@ table tbody td select.rejected {
 .backup .backup-package-box {
     border: 1px solid #ddd;
     min-width: calc((100% - 60px) / 3);
+    transition: 0.3s;
 }
 
 .backup .backup-package-box.active {
