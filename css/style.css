@@ -947,4 +947,48 @@ table tbody td select.rejected {
 }
 /* End the Widget Control Section */
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* Start the Backup Manager Section */
+.backup .backup-time {
+    border-bottom: 1px solid var(--light-grey-color);
+}
+
+.backup .backup-time-box input {
+    display: none;
+}
+
+.backup .backup-time-box label::before,
+.backup .backup-time-box label::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.backup .backup-time-box label::before {
+    width: 18px;
+    height: 18px;
+    left: 0;
+    margin-top: -9px;
+    border: 2px solid var(--grey-color);
+}
+
+.backup .backup-time-box label::after {
+    width: 12px;
+    height: 12px;
+    left: 3px;
+    margin-top: -6px;
+    background-color: var(--blue-color);
+    transform: scale(0);
+}
+
+.backup .backup-time-box input:checked + label::before {
+    border-color: var(--blue-color);
+}
+
+.backup .backup-time-box input:checked + label::after {
+    transform: scale(1);
+}
+/* End the Backup Manager Section */
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
 /*-=-=-=--=-=-=- End the Settings Page -=-=-=--=-=-=-  */
