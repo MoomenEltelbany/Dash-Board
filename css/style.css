@@ -1012,12 +1012,46 @@ table tbody td select.rejected {
 /*-=-=-=--=-=-=- Start the Profile Page -=-=-=--=-=-=-  */
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
 /* Start the General Information Section */
-.profile-page .profile-photo img {
+
+.profile-page .profile-rating img {
     width: 150px;
+}
+
+.profile-page .profile-rating .profile-bar {
+    position: relative;
+    width: 150px;
+    height: 6px;
+    background-color: #eee;
+    border-radius: 2px;
+}
+
+.profile-page .profile-rating .profile-bar::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 120px;
+    height: 6px;
+    background-color: var(--blue-color);
+    border-radius: 2px;
+}
+
+.profile-page .profile-rating i {
+    color: rgb(245, 158, 66);
+}
+
+.profile-page .profile-text {
+    border-left: 1px solid #eee;
 }
 
 .text-box {
     border-bottom: 1px solid #eee;
+}
+
+@media (min-width: 767px) {
+    .text-box .user-info > div {
+        min-width: 320px;
+    }
 }
 
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
