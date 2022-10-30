@@ -1011,8 +1011,14 @@ table tbody td select.rejected {
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
 /*-=-=-=--=-=-=- Start the Profile Page -=-=-=--=-=-=-  */
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
+/* Start the General Information Section */
 .profile-page .profile-photo img {
     width: 150px;
 }
+
+.text-box {
+    border-bottom: 1px solid #eee;
+}
+
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
 /*-=-=-=--=-=-=- End the Profile Page -=-=-=--=-=-=-  */
