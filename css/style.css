@@ -1054,5 +1054,39 @@ table tbody td select.rejected {
     }
 }
 
+/* Start the Skills Section */
+.skills .languages {
+    border-bottom: 1px solid #eee;
+}
+
+@media (min-width: 767px) {
+    .skills .languages {
+        /* min-width: 500px; */
+    }
+}
+
+.skills .languages p {
+    padding: 5px 10px;
+    border-radius: 6px;
+    background-color: #eee;
+}
+/* End the Skills Section */
+/* Start the Activities Section */
+/* .activities {
+}
+
+@media (min-width: 767px) {
+    .activities {
+        min-width: 500px;
+    }
+} */
+.activities .store {
+    border-bottom: 1px solid #eee;
+}
+.activities img {
+    width: 64px;
+    height: 64px;
+}
+/* End the Activities Section */
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
 /*-=-=-=--=-=-=- End the Profile Page -=-=-=--=-=-=-  */
