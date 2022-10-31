@@ -1187,7 +1187,7 @@ table tbody td select.rejected {
 .projects-page .project-box .money-bar .bar.blue::before {
     background-color: var(--blue-color);
 }
-
+/* Had to make like this otherwise I would give a class for each */
 .projects-page .project-box:nth-child(1) .money-bar .bar::before {
     width: 140px;
 }
