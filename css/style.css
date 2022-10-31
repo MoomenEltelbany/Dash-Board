@@ -1091,4 +1091,128 @@ table tbody td select.rejected {
 
 /* End the Activities Section */
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= */
-/*-=-=-=--=-=-=- End the Profile Page -=-=-=--=-=-=-  */
+/* -=-=-=--=-=-=- End the Profile Page -=-=-=--=-=-=-  */
+/* -=-=-=--=-=-=- Start the Project Page -=-=-=--=-=-=-  */
+
+.projects-page {
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
+@media (max-width: 767px) {
+    .projects-page {
+        grid-template-columns: minmax(150px, 1fr);
+        gap: 10px;
+    }
+}
+/* Start the project page boxes */
+.projects-page .project-date {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.projects-page .project-box .images {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+.projects-page .project-box .images img {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.projects-page .project-box .images img:hover {
+    z-index: 2;
+}
+
+.projects-page .project-box .images img:not(:first-child) {
+    margin-left: -25px;
+}
+
+.projects-page .project-box .languages {
+    text-align: right;
+    border-bottom: 1px solid #eee;
+}
+
+.projects-page .project-box .languages span {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #eee;
+    border-radius: 6px;
+    transition: 0.5s;
+}
+
+.projects-page .project-box .languages span:hover {
+    background-color: var(--grey-color);
+    color: white;
+}
+
+@media (max-width: 767px) {
+    .projects-page .project-box .languages {
+        text-align: left;
+    }
+    .projects-page .project-box .languages span {
+        display: block;
+        width: fit-content;
+    }
+    .projects-page .project-box .languages span:not(:first-child) {
+        margin-top: 10px;
+    }
+}
+
+.projects-page .project-box .money-bar .bar {
+    width: 260px;
+    height: 10px;
+    border-radius: 6px;
+    background-color: #eee;
+    overflow: hidden;
+}
+
+.projects-page .project-box .money-bar .bar::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 10px;
+}
+.projects-page .project-box .money-bar .bar.red::before {
+    background-color: var(--red-color);
+}
+.projects-page .project-box .money-bar .bar.green::before {
+    background-color: var(--green-color);
+}
+.projects-page .project-box .money-bar .bar.blue::before {
+    background-color: var(--blue-color);
+}
+
+.projects-page .project-box:nth-child(1) .money-bar .bar::before {
+    width: 140px;
+}
+.projects-page .project-box:nth-child(2) .money-bar .bar::before {
+    width: 200px;
+}
+.projects-page .project-box:nth-child(3) .money-bar .bar::before {
+    width: 100px;
+}
+.projects-page .project-box:nth-child(4) .money-bar .bar::before {
+    width: 170px;
+}
+.projects-page .project-box:nth-child(5) .money-bar .bar::before {
+    width: 260px;
+}
+.projects-page .project-box:nth-child(6) .money-bar .bar::before {
+    width: 30px;
+}
+.projects-page .project-box:nth-child(7) .money-bar .bar::before {
+    width: 210px;
+}
+.projects-page .project-box:nth-child(8) .money-bar .bar::before {
+    width: 140px;
+}
+.projects-page .project-box:nth-child(9) .money-bar .bar::before {
+    width: 190px;
+}
+/* -=-=-=--=-=-=- End the Project Page -=-=-=--=-=-=-  */
