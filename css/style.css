@@ -1222,3 +1222,58 @@ table tbody td select.rejected {
     width: 190px;
 }
 /* -=-=-=--=-=-=- End the Project Page -=-=-=--=-=-=-  */
+/* -=-=-=--=-=-=- Start the Courses Page -=-=-=--=-=-=-  */
+.courses-page {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+@media (max-width: 767px) {
+    .courses-page {
+        grid-template-columns: minmax(150px, 1fr);
+        gap: 10px;
+    }
+}
+
+.courses-page .course-box {
+    background-color: white;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.courses-page .course-box .courses-image {
+    max-width: 100%;
+}
+
+.courses-page .course-box .courses-info::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 2px;
+    background-color: #eee;
+}
+
+.courses-page .course-box .courses-info p {
+    width: fit-content;
+    background-color: var(--blue-color);
+    margin: auto;
+    padding: 5px 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+}
+
+.courses-page .course-box .instructor img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 2px solid white;
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+/* -=-=-=--=-=-=- End the Courses Page -=-=-=--=-=-=-  */
