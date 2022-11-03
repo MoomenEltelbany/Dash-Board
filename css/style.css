@@ -1367,6 +1367,10 @@ table tbody td select.rejected {
 /* -=-=-=--=-=-=- Start the Files Page -=-=-=--=-=-=-  */
 .files {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  flex-grow: 5;
+}
+.stats {
+  flex-grow: 1;
 }
 
 @media (max-width: 767px) {
