@@ -1398,11 +1398,11 @@ table tbody td select.rejected {
   width: 40px;
   height: 40px;
   font-size: 24px;
-
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .file-page .stats i.blue {
   background-color: rgb(0, 117, 255, 0.3);
   color: var(--blue-color);
@@ -1418,5 +1418,41 @@ table tbody td select.rejected {
 .file-page .stats i.orange {
   background-color: rgb(245, 158, 11, 0.3);
   color: var(--orange-color);
+}
+
+.file-page .stats .upload {
+  width: fit-content;
+  margin: 15px auto;
+  padding: 4px 8px;
+  font-size: 14px;
+  color: white;
+  background-color: var(--blue-color);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.file-page .stats .upload:hover {
+  background-color: var(--blue-alt-color);
+}
+
+.file-page .stats .upload:hover i {
+  animation: up 0.7s ease-in-out infinite;
+}
+.file-page .stats .upload i {
+  position: relative;
+  font-size: 16px;
+}
+
+@keyframes up {
+  0% {
+    top: -5px;
+  }
+  50% {
+    top: 0px;
+  }
+  100% {
+    top: -5px;
+  }
 }
 /* -=-=-=--=-=-=- End the Files Page -=-=-=--=-=-=-  */
