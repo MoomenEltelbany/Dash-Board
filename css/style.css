@@ -1384,6 +1384,19 @@ table tbody td select.rejected {
     }
 }
 
+.files .box img,
+.files .box i {
+    transition: 0.5s;
+}
+
+.files .box:hover i {
+    color: var(--blue-color);
+}
+
+.files .box:hover img {
+    transform: rotate(7deg);
+}
+
 .files .file-image img {
     width: 64px;
     height: 64px;
