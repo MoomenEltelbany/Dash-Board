@@ -1479,7 +1479,7 @@ table tbody td select.rejected {
 /* -=-=-=--=-=-=- End the Files Page -=-=-=--=-=-=-  */
 /* -=-=-=--=-=-=- Start the Plans Page -=-=-=--=-=-=-  */
 .plans-page {
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
 }
 
 @media (max-width: 767px) {
@@ -1509,7 +1509,7 @@ table tbody td select.rejected {
     content: "$";
     position: absolute;
     left: -20px;
-    top: 0;
+    top: -10px;
     font-size: 20px;
     font-weight: normal;
     color: white;
@@ -1544,6 +1544,9 @@ table tbody td select.rejected {
     color: white;
 }
 
+.plans-page .plan-box a {
+    overflow: hidden;
+}
 .plans-page .plan-box.green a {
     background-color: var(--green-color);
     z-index: 2;
@@ -1553,7 +1556,7 @@ table tbody td select.rejected {
     z-index: 2;
 }
 .plans-page .plan-box.orange a {
-    background-color: var(--green-color);
+    background-color: var(--orange-color);
     z-index: 2;
 }
 
