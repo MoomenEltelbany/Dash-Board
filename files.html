@@ -1,242 +1,494 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Files</title>
-    <!-- Link of Favicon -->
-    <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
-    <!-- Font awesome link -->
-    <link rel="stylesheet" href="css/all.min.css">
-    <!-- The main CSS file -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-        rel="stylesheet">
-    <!-- Tailwind link -->
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Files</title>
+        <!-- Link of Favicon -->
+        <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+        <!-- Font awesome link -->
+        <link rel="stylesheet" href="css/all.min.css">
+        <!-- The main CSS file -->
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+            rel="stylesheet">
+        <!-- Tailwind link -->
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
 
-<body>
-    <div class="page flex">
-        <aside class="md:w-60 sidebar pt-8 sticky top-0">
-            <h2 class="relative w-full mx-auto text-center mb-14 sm:text-base md:text-xl uppercase font-bold
+    <body>
+        <div class="page flex">
+            <aside class="md:w-60 sidebar pt-8 sticky top-0">
+                <h2 class="relative w-full mx-auto text-center mb-14 sm:text-base md:text-xl uppercase font-bold
                 ">Infinite</h2>
-            <ul class="sidebar-list">
-                <li class="flex items-center mb-3 text-base rounded-md cursor-pointer ">
-                    <a href="index.html" class="ml-3">
-                        <i class="fa-solid fa-chart-bar"></i>
-                        <span class="category">Dashboard</span>
-                    </a>
-                </li>
-                <li class="flex items-center mb-3 rounded-md cursor-pointer text-base ">
-                    <a href="settings.html" class="ml-3">
-                        <i class="fa-solid fa-gear"></i>
-                        <span class="category">Settings</span>
-                    </a>
-                </li>
-                <li class="flex items-center mb-3 rounded-md cursor-pointer text-base">
-                    <a href="profile.html" class="ml-3">
-                        <i class="fa-regular fa-user"></i>
-                        <span class="category">Profiles</span>
-                    </a>
-                </li>
-                <li class="flex items-center mb-3 rounded-md cursor-pointer text-base ">
-                    <a href="projects.html" class="ml-3">
-                        <i class="fa-solid fa-diagram-project"></i>
-                        <span class="category">Projects</span>
-                    </a>
-                </li>
-                <li class="flex items-center mb-3 rounded-md cursor-pointer text-base">
-                    <a href="courses.html" class="ml-3">
-                        <i class="fa-solid fa-graduation-cap"></i>
-                        <span class="category">Courses</span>
-                    </a>
-                </li>
-                <li class="flex items-center mb-3 rounded-md cursor-pointer text-base">
-                    <a href="friends.html" class="ml-3">
-                        <i class="fa-regular fa-circle-user"></i>
-                        <span class="category">Friends</span>
-                    </a>
-                </li>
-                <li class="flex items-center mb-3 rounded-md cursor-pointer text-base active">
-                    <a href="files.html" class="ml-3">
-                        <i class="fa-regular fa-file"></i>
-                        <span class="category">Files</span>
-                    </a>
-                </li>
-                <li class="flex items-center mb-3 rounded-md cursor-pointer text-base">
-                    <a href="plans.html" class="ml-3">
-                        <i class="fa-regular fa-credit-card"></i>
-                        <span class="category">Plans</span>
-                    </a>
-                </li>
-                <li class="flex items-center flex-wrap mb-3 rounded-md cursor-pointer text-base">
-                    <a href="#" class="ml-3">
-                        <i class="fa-solid fa-palette"></i>
-                        <span class="category">Colors</span>
-                    </a>
-                    <div class="flex justify-evenly gap-2 mt-4 py-3 px-5 rounded-md colors">
-                        <span class="active"></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
+                <ul class="sidebar-list">
+                    <li class="flex items-center mb-3 text-base rounded-md cursor-pointer ">
+                        <a href="index.html" class="ml-3">
+                            <i class="fa-solid fa-chart-bar"></i>
+                            <span class="category">Dashboard</span>
+                        </a>
+                    </li>
+                    <li class="flex items-center mb-3 rounded-md cursor-pointer text-base ">
+                        <a href="settings.html" class="ml-3">
+                            <i class="fa-solid fa-gear"></i>
+                            <span class="category">Settings</span>
+                        </a>
+                    </li>
+                    <li class="flex items-center mb-3 rounded-md cursor-pointer text-base">
+                        <a href="profile.html" class="ml-3">
+                            <i class="fa-regular fa-user"></i>
+                            <span class="category">Profiles</span>
+                        </a>
+                    </li>
+                    <li class="flex items-center mb-3 rounded-md cursor-pointer text-base ">
+                        <a href="projects.html" class="ml-3">
+                            <i class="fa-solid fa-diagram-project"></i>
+                            <span class="category">Projects</span>
+                        </a>
+                    </li>
+                    <li class="flex items-center mb-3 rounded-md cursor-pointer text-base">
+                        <a href="courses.html" class="ml-3">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                            <span class="category">Courses</span>
+                        </a>
+                    </li>
+                    <li class="flex items-center mb-3 rounded-md cursor-pointer text-base">
+                        <a href="friends.html" class="ml-3">
+                            <i class="fa-regular fa-circle-user"></i>
+                            <span class="category">Friends</span>
+                        </a>
+                    </li>
+                    <li class="flex items-center mb-3 rounded-md cursor-pointer text-base active">
+                        <a href="files.html" class="ml-3">
+                            <i class="fa-regular fa-file"></i>
+                            <span class="category">Files</span>
+                        </a>
+                    </li>
+                    <li class="flex items-center mb-3 rounded-md cursor-pointer text-base">
+                        <a href="plans.html" class="ml-3">
+                            <i class="fa-regular fa-credit-card"></i>
+                            <span class="category">Plans</span>
+                        </a>
+                    </li>
+                    <li class="flex items-center flex-wrap mb-3 rounded-md cursor-pointer text-base">
+                        <a href="#" class="ml-3">
+                            <i class="fa-solid fa-palette"></i>
+                            <span class="category">Colors</span>
+                        </a>
+                        <div class="flex justify-evenly gap-2 mt-4 py-3 px-5 rounded-md colors">
+                            <span class="active"></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </li>
+                </ul>
+            </aside>
+            <main class="content w-full overflow-hidden">
+                <header class="bg-white py-5 px-8 mb-8 flex justify-between">
+                    <div class="flex items-center rounded-md pl-2 user-input">
+                        <i class="pr-2 fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Type a Keyword">
                     </div>
-                </li>
-            </ul>
-        </aside>
-        <main class="content w-full overflow-hidden">
-            <header class="bg-white py-5 px-8 mb-8 flex justify-between">
-                <div class="flex items-center rounded-md pl-2 user-input">
-                    <i class="pr-2 fa-solid fa-magnifying-glass"></i>
-                    <input type="text" placeholder="Type a Keyword">
-                </div>
-                <div class="flex items-center gap-3 user-photo">
-                    <span class="relative notification">
-                        <i class="cursor-pointer fa-regular fa-bell"></i>
-                    </span>
-                    <img src="imgs/avatar.png" alt="">
-                </div>
-            </header>
-            <h2 class="pl-5 mb-8 text-3xl font-bold relative special-heading">Files</h2>
-            <main class="p-3 md:p-5 flex flex-wrap-reverse gap-5  file-page">
-                <div class=" grid gap-5 files">
-                    <div class="box ">
-                        <div class="text-gray-500 icon">
-                            <i class="fa-solid fa-download"></i>
-                        </div>
-                        <div class="text-center file-image">
-                            <img src="imgs/pdf.svg" alt="">
-                            <p class="text-lg">my-file.pdf</p>
-                        </div>
-                        <p class="text-gray-500 py-5">Moomen ELtelbany</p>
-                        <div class="pt-3 flex justify-between text-gray-500 file-date">
-                            <span>20/06/2022</span>
-                            <span>5.5MB</span>
-                        </div>
+                    <div class="flex items-center gap-3 user-photo">
+                        <span class="relative notification">
+                            <i class="cursor-pointer fa-regular fa-bell"></i>
+                        </span>
+                        <img src="imgs/avatar.png" alt="">
                     </div>
-                    <div class="box ">
-                        <div class="text-gray-500 icon">
-                            <i class="fa-solid fa-download"></i>
-                        </div>
-                        <div class="text-center file-image">
-                            <img src="imgs/pdf.svg" alt="">
-                            <p class="text-lg">my-file.pdf</p>
-                        </div>
-                        <p class="text-gray-500 py-5">Moomen ELtelbany</p>
-                        <div class="pt-3 flex justify-between text-gray-500 file-date">
-                            <span>20/06/2022</span>
-                            <span>5.5MB</span>
-                        </div>
-                    </div>
-                    <div class="box ">
-                        <div class="text-gray-500 icon">
-                            <i class="fa-solid fa-download"></i>
-                        </div>
-                        <div class="text-center file-image">
-                            <img src="imgs/pdf.svg" alt="">
-                            <p class="text-lg">my-file.pdf</p>
-                        </div>
-                        <p class="text-gray-500 py-5">Moomen ELtelbany</p>
-                        <div class="pt-3 flex justify-between text-gray-500 file-date">
-                            <span>20/06/2022</span>
-                            <span>5.5MB</span>
-                        </div>
-                    </div>
-                    <div class="box ">
-                        <div class="text-gray-500 icon">
-                            <i class="fa-solid fa-download"></i>
-                        </div>
-                        <div class="text-center file-image">
-                            <img src="imgs/pdf.svg" alt="">
-                            <p class="text-lg">my-file.pdf</p>
-                        </div>
-                        <p class="text-gray-500 py-5">Moomen ELtelbany</p>
-                        <div class="pt-3 flex justify-between text-gray-500 file-date">
-                            <span>20/06/2022</span>
-                            <span>5.5MB</span>
-                        </div>
-                    </div>
-                    <div class="box ">
-                        <div class="text-gray-500 icon">
-                            <i class="fa-solid fa-download"></i>
-                        </div>
-                        <div class="text-center file-image">
-                            <img src="imgs/pdf.svg" alt="">
-                            <p class="text-lg">my-file.pdf</p>
-                        </div>
-                        <p class="text-gray-500 py-5">Moomen ELtelbany</p>
-                        <div class="pt-3 flex justify-between text-gray-500 file-date">
-                            <span>20/06/2022</span>
-                            <span>5.5MB</span>
-                        </div>
-                    </div>
-                    <div class="box ">
-                        <div class="text-gray-500 icon">
-                            <i class="fa-solid fa-download"></i>
-                        </div>
-                        <div class="text-center file-image">
-                            <img src="imgs/pdf.svg" alt="">
-                            <p class="text-lg">my-file.pdf</p>
-                        </div>
-                        <p class="text-gray-500 py-5">Moomen ELtelbany</p>
-                        <div class="pt-3 flex justify-between text-gray-500 file-date">
-                            <span>20/06/2022</span>
-                            <span>5.5MB</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="stats">
-                    <div class="box">
-                        <h2 class="mb-5">Files Statistics</h2>
-                        <div class="p-3 mb-3 w-full flex items-center stat-box">
-                            <i class="fa-regular fa-file-pdf blue"></i>
-                            <div class="ml-3 text">
-                                <p>PDF</p>
-                                <p class="text-gray-400">130</p>
+                </header>
+                <h2 class="pl-5 mb-8 text-3xl font-bold relative special-heading">Files</h2>
+                <main class="p-3 md:p-5 flex flex-wrap-reverse gap-5  file-page">
+                    <div class=" grid gap-5 files">
+                        <div class="box ">
+                            <div class="text-gray-500 icon">
+                                <i class="fa-solid fa-download"></i>
                             </div>
-                            <span class=" ml-auto text-gray-400">6.5GB</span>
-                        </div>
-                        <div class="p-3 mb-3 w-full flex items-center stat-box">
-                            <i class="fa-regular fa-image green"></i>
-                            <div class="ml-3 text">
-                                <p>Images</p>
-                                <p class="text-gray-400">115 files</p>
+                            <div class="text-center file-image">
+                                <img src="imgs/pdf.svg" alt="">
+                                <p class="text-lg">my-file.pdf</p>
                             </div>
-                            <span class=" ml-auto text-gray-400">3.5GB</span>
-                        </div>
-                        <div class="p-3 mb-3 w-full flex items-center stat-box">
-                            <i class="fa-regular fa-file-word red"></i>
-                            <div class="ml-3 text">
-                                <p>Word Files</p>
-                                <p class="text-gray-400">110 files</p>
+                            <p class="text-gray-500 py-5">Moomen ELtelbany</p>
+                            <div class="pt-3 flex justify-between text-gray-500 file-date">
+                                <span>20/06/2022</span>
+                                <span>5.5MB</span>
                             </div>
-                            <span class=" ml-auto text-gray-400">3.2GB</span>
                         </div>
-                        <div class="p-3 mb-3 w-full flex items-center stat-box">
-                            <i class="fa-solid fa-file-csv orange"></i>
-                            <div class="ml-3 text">
-                                <p>CSV Files</p>
-                                <p class="text-gray-400">99 files</p>
+                        <div class="box ">
+                            <div class="text-gray-500 icon">
+                                <i class="fa-solid fa-download"></i>
                             </div>
-                            <span class=" ml-auto text-gray-400">2.9GB</span>
+                            <div class="text-center file-image">
+                                <img src="imgs/avi.svg" alt="">
+                                <p class="text-lg">my-file.avi</p>
+                            </div>
+                            <p class="text-gray-500 py-5">Admin</p>
+                            <div class="pt-3 flex justify-between text-gray-500 file-date">
+                                <span>09/09/2022</span>
+                                <span>2.5MB</span>
+                            </div>
                         </div>
-                        <div class="flex justify-center items-center upload">
-                            <i class="fa-solid fa-angles-up"></i>
-                            <span>Upload</span>
+                        <div class="box ">
+                            <div class="text-gray-500 icon">
+                                <i class="fa-solid fa-download"></i>
+                            </div>
+                            <div class="text-center file-image">
+                                <img src="imgs/dll.svg" alt="">
+                                <p class="text-lg">my-file.svg</p>
+                            </div>
+                            <p class="text-gray-500 py-5">Islam ELtelbany</p>
+                            <div class="pt-3 flex justify-between text-gray-500 file-date">
+                                <span>01/01/2022</span>
+                                <span>7.5MB</span>
+                            </div>
+                        </div>
+                        <div class="box ">
+                            <div class="text-gray-500 icon">
+                                <i class="fa-solid fa-download"></i>
+                            </div>
+                            <div class="text-center file-image">
+                                <img src="imgs/psd.svg" alt="">
+                                <p class="text-lg">my-file.psd</p>
+                            </div>
+                            <p class="text-gray-500 py-5">Admin</p>
+                            <div class="pt-3 flex justify-between text-gray-500 file-date">
+                                <span>28/10/2022</span>
+                                <span>10.5MB</span>
+                            </div>
+                        </div>
+                        <div class="box ">
+                            <div class="text-gray-500 icon">
+                                <i class="fa-solid fa-download"></i>
+                            </div>
+                            <div class="text-center file-image">
+                                <img src="imgs/eps.svg" alt="">
+                                <p class="text-lg">my-file.eps</p>
+                            </div>
+                            <p class="text-gray-500 py-5">Omar ELtelbany</p>
+                            <div class="pt-3 flex justify-between text-gray-500 file-date">
+                                <span>22/11/2022</span>
+                                <span>2.5MB</span>
+                            </div>
+                        </div>
+                        <div class="box ">
+                            <div class="text-gray-500 icon">
+                                <i class="fa-solid fa-download"></i>
+                            </div>
+                            <div class="text-center file-image">
+                                <img src="imgs/png.svg" alt="">
+                                <p class="text-lg">my-file.png</p>
+                            </div>
+                            <p class="text-gray-500 py-5">Uploader</p>
+                            <div class="pt-3 flex justify-between text-gray-500 file-date">
+                                <span>20/06/2022</span>
+                                <span>5.5MB</span>
+                            </div>
+                        </div>
+                        <div class="box ">
+                            <div class="text-gray-500 icon">
+                                <i class="fa-solid fa-download"></i>
+                            </div>
+                            <div class="text-center file-image">
+                                <img src="imgs/psd.svg" alt="">
+                                <p class="text-lg">my-file.psd</p>
+                            </div>
+                            <p class="text-gray-500 py-5">Admin</p>
+                            <div class="pt-3 flex justify-between text-gray-500 file-date">
+                                <span>28/10/2022</span>
+                                <span>10.5MB</span>
+                            </div>
+                        </div>
+                        <div class="box ">
+                            <div class="text-gray-500 icon">
+                                <i class="fa-solid fa-download"></i>
+                            </div>
+                            <div class="text-center file-image">
+                                <img src="imgs/avi.svg" alt="">
+                                <p class="text-lg">my-file.avi</p>
+                            </div>
+                            <p class="text-gray-500 py-5">Admin</p>
+                            <div class="pt-3 flex justify-between text-gray-500 file-date">
+                                <span>09/09/2022</span>
+                                <span>2.5MB</span>
+                            </div>
+                        </div>
+                        <div class="box ">
+                            <div class="text-gray-500 icon">
+                                <i class="fa-solid fa-download"></i>
+                            </div>
+                            <div class="text-center file-image">
+                                <img src="imgs/eps.svg" alt="">
+                                <p class="text-lg">my-file.eps</p>
+                            </div>
+                            <p class="text-gray-500 py-5">Omar ELtelbany</p>
+                            <div class="pt-3 flex justify-between text-gray-500 file-date">
+                                <span>22/11/2022</span>
+                                <span>2.5MB</span>
+                            </div>
+                        </div>
+                        <div class="box ">
+                            <div class="text-gray-500 icon">
+                                <i class="fa-solid fa-download"></i>
+                            </div>
+                            <div class="text-center file-image">
+                                <img src="imgs/pdf.svg" alt="">
+                                <p class="text-lg">my-file.pdf</p>
+                            </div>
+                            <p class="text-gray-500 py-5">Moomen ELtelbany</p>
+                            <div class="pt-3 flex justify-between text-gray-500 file-date">
+                                <span>20/06/2022</span>
+                                <span>5.5MB</span>
+                            </div>
+                        </div>
+                        <div class="box ">
+                            <div class="text-gray-500 icon">
+                                <i class="fa-solid fa-download"></i>
+                            </div>
+                            <div class="text-center file-image">
+                                <img src="imgs/dll.svg" alt="">
+                                <p class="text-lg">my-file.svg</p>
+                            </div>
+                            <p class="text-gray-500 py-5">Islam ELtelbany</p>
+                            <div class="pt-3 flex justify-between text-gray-500 file-date">
+                                <span>01/01/2022</span>
+                                <span>7.5MB</span>
+                            </div>
+                        </div>
+                        <div class="box ">
+                            <div class="text-gray-500 icon">
+                                <i class="fa-solid fa-download"></i>
+                            </div>
+                            <div class="text-center file-image">
+                                <img src="imgs/eps.svg" alt="">
+                                <p class="text-lg">my-file.eps</p>
+                            </div>
+                            <p class="text-gray-500 py-5">Omar ELtelbany</p>
+                            <div class="pt-3 flex justify-between text-gray-500 file-date">
+                                <span>22/11/2022</span>
+                                <span>2.5MB</span>
+                            </div>
+                        </div>
+                        <div class="box ">
+                            <div class="text-gray-500 icon">
+                                <i class="fa-solid fa-download"></i>
+                            </div>
+                            <div class="text-center file-image">
+                                <img src="imgs/pdf.svg" alt="">
+                                <p class="text-lg">my-file.pdf</p>
+                            </div>
+                            <p class="text-gray-500 py-5">Moomen ELtelbany</p>
+                            <div class="pt-3 flex justify-between text-gray-500 file-date">
+                                <span>20/06/2022</span>
+                                <span>5.5MB</span>
+                            </div>
+                        </div>
+                        <div class="box ">
+                            <div class="text-gray-500 icon">
+                                <i class="fa-solid fa-download"></i>
+                            </div>
+                            <div class="text-center file-image">
+                                <img src="imgs/png.svg" alt="">
+                                <p class="text-lg">my-file.png</p>
+                            </div>
+                            <p class="text-gray-500 py-5">Islam ELtelbany</p>
+                            <div class="pt-3 flex justify-between text-gray-500 file-date">
+                                <span>01/01/2022</span>
+                                <span>7.5MB</span>
+                            </div>
+                        </div>
+                        <div class="box ">
+                            <div class="text-gray-500 icon">
+                                <i class="fa-solid fa-download"></i>
+                            </div>
+                            <div class="text-center file-image">
+                                <img src="imgs/pdf.svg" alt="">
+                                <p class="text-lg">my-file.pdf</p>
+                            </div>
+                            <p class="text-gray-500 py-5">Moomen ELtelbany</p>
+                            <div class="pt-3 flex justify-between text-gray-500 file-date">
+                                <span>20/06/2022</span>
+                                <span>5.5MB</span>
+                            </div>
+                        </div>
+                        <div class="box ">
+                            <div class="text-gray-500 icon">
+                                <i class="fa-solid fa-download"></i>
+                            </div>
+                            <div class="text-center file-image">
+                                <img src="imgs/psd.svg" alt="">
+                                <p class="text-lg">my-file.psd</p>
+                            </div>
+                            <p class="text-gray-500 py-5">Admin</p>
+                            <div class="pt-3 flex justify-between text-gray-500 file-date">
+                                <span>28/10/2022</span>
+                                <span>10.5MB</span>
+                            </div>
+                        </div>
+                        <div class="box ">
+                            <div class="text-gray-500 icon">
+                                <i class="fa-solid fa-download"></i>
+                            </div>
+                            <div class="text-center file-image">
+                                <img src="imgs/pdf.svg" alt="">
+                                <p class="text-lg">my-file.pdf</p>
+                            </div>
+                            <p class="text-gray-500 py-5">Moomen ELtelbany</p>
+                            <div class="pt-3 flex justify-between text-gray-500 file-date">
+                                <span>20/06/2022</span>
+                                <span>5.5MB</span>
+                            </div>
+                        </div>
+                        <div class="box ">
+                            <div class="text-gray-500 icon">
+                                <i class="fa-solid fa-download"></i>
+                            </div>
+                            <div class="text-center file-image">
+                                <img src="imgs/dll.svg" alt="">
+                                <p class="text-lg">my-file.svg</p>
+                            </div>
+                            <p class="text-gray-500 py-5">Islam ELtelbany</p>
+                            <div class="pt-3 flex justify-between text-gray-500 file-date">
+                                <span>01/01/2022</span>
+                                <span>7.5MB</span>
+                            </div>
+                        </div>
+                        <div class="box ">
+                            <div class="text-gray-500 icon">
+                                <i class="fa-solid fa-download"></i>
+                            </div>
+                            <div class="text-center file-image">
+                                <img src="imgs/eps.svg" alt="">
+                                <p class="text-lg">my-file.eps</p>
+                            </div>
+                            <p class="text-gray-500 py-5">Omar ELtelbany</p>
+                            <div class="pt-3 flex justify-between text-gray-500 file-date">
+                                <span>22/11/2022</span>
+                                <span>2.5MB</span>
+                            </div>
+                        </div>
+                        <div class="box ">
+                            <div class="text-gray-500 icon">
+                                <i class="fa-solid fa-download"></i>
+                            </div>
+                            <div class="text-center file-image">
+                                <img src="imgs/pdf.svg" alt="">
+                                <p class="text-lg">my-file.pdf</p>
+                            </div>
+                            <p class="text-gray-500 py-5">Moomen ELtelbany</p>
+                            <div class="pt-3 flex justify-between text-gray-500 file-date">
+                                <span>20/06/2022</span>
+                                <span>5.5MB</span>
+                            </div>
+                        </div>
+                        <div class="box ">
+                            <div class="text-gray-500 icon">
+                                <i class="fa-solid fa-download"></i>
+                            </div>
+                            <div class="text-center file-image">
+                                <img src="imgs/dll.svg" alt="">
+                                <p class="text-lg">my-file.svg</p>
+                            </div>
+                            <p class="text-gray-500 py-5">Islam ELtelbany</p>
+                            <div class="pt-3 flex justify-between text-gray-500 file-date">
+                                <span>01/01/2022</span>
+                                <span>7.5MB</span>
+                            </div>
+                        </div>
+                        <div class="box ">
+                            <div class="text-gray-500 icon">
+                                <i class="fa-solid fa-download"></i>
+                            </div>
+                            <div class="text-center file-image">
+                                <img src="imgs/psd.svg" alt="">
+                                <p class="text-lg">my-file.psd</p>
+                            </div>
+                            <p class="text-gray-500 py-5">Admin</p>
+                            <div class="pt-3 flex justify-between text-gray-500 file-date">
+                                <span>28/10/2022</span>
+                                <span>10.5MB</span>
+                            </div>
+                        </div>
+                        <div class="box ">
+                            <div class="text-gray-500 icon">
+                                <i class="fa-solid fa-download"></i>
+                            </div>
+                            <div class="text-center file-image">
+                                <img src="imgs/png.svg" alt="">
+                                <p class="text-lg">my-file.png</p>
+                            </div>
+                            <p class="text-gray-500 py-5">Admin</p>
+                            <div class="pt-3 flex justify-between text-gray-500 file-date">
+                                <span>28/10/2022</span>
+                                <span>6.5MB</span>
+                            </div>
+                        </div>
+                        <div class="box ">
+                            <div class="text-gray-500 icon">
+                                <i class="fa-solid fa-download"></i>
+                            </div>
+                            <div class="text-center file-image">
+                                <img src="imgs/psd.svg" alt="">
+                                <p class="text-lg">my-file.psd</p>
+                            </div>
+                            <p class="text-gray-500 py-5">Admin</p>
+                            <div class="pt-3 flex justify-between text-gray-500 file-date">
+                                <span>28/10/2022</span>
+                                <span>10.5MB</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </main>
+                    <div class="stats">
+                        <div class="box">
+                            <h2 class=" text-center md:text-left mb-5">Files Statistics</h2>
+                            <div class="p-3 mb-3 w-full flex items-center stat-box">
+                                <i class="fa-regular fa-file-pdf blue"></i>
+                                <div class="ml-3 text">
+                                    <p>PDF</p>
+                                    <p class="text-gray-400">130</p>
+                                </div>
+                                <span class=" ml-auto text-gray-400">6.5GB</span>
+                            </div>
+                            <div class="p-3 mb-3 w-full flex items-center stat-box">
+                                <i class="fa-regular fa-image green"></i>
+                                <div class="ml-3 text">
+                                    <p>Images</p>
+                                    <p class="text-gray-400">115 files</p>
+                                </div>
+                                <span class=" ml-auto text-gray-400">3.5GB</span>
+                            </div>
+                            <div class="p-3 mb-3 w-full flex items-center stat-box">
+                                <i class="fa-regular fa-file-word red"></i>
+                                <div class="ml-3 text">
+                                    <p>Word Files</p>
+                                    <p class="text-gray-400">110 files</p>
+                                </div>
+                                <span class=" ml-auto text-gray-400">3.2GB</span>
+                            </div>
+                            <div class="p-3 mb-3 w-full flex items-center stat-box">
+                                <i class="fa-solid fa-file-csv orange"></i>
+                                <div class="ml-3 text">
+                                    <p>CSV Files</p>
+                                    <p class="text-gray-400">99 files</p>
+                                </div>
+                                <span class=" ml-auto text-gray-400">2.9GB</span>
+                            </div>
+                            <div class="flex justify-center items-center upload">
+                                <i class="fa-solid fa-angles-up"></i>
+                                <span>Upload</span>
+                            </div>
+                        </div>
+                    </div>
+                </main>
 
-        </main>
-    </div>
-    <script src="js/setting.js"></script>
-</body>
+            </main>
+        </div>
+        <script src="js/setting.js"></script>
+    </body>
 
 </html>
