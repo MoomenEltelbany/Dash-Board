@@ -1477,3 +1477,31 @@ table tbody td select.rejected {
     }
 }
 /* -=-=-=--=-=-=- End the Files Page -=-=-=--=-=-=-  */
+/* -=-=-=--=-=-=- Start the Plans Page -=-=-=--=-=-=-  */
+.plans-page {
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
+
+@media (max-width: 767px) {
+    .plans-page {
+        grid-template-columns: minmax(150px, 1fr);
+        gap: 10px;
+    }
+}
+
+.plans-page .plan-box.green .title {
+    background-color: var(--green-color);
+    border: 4px solid white;
+    outline: 4px solid var(--green-color);
+}
+.plans-page .plan-box.blue .title {
+    background-color: var(--blue-color);
+    border: 4px solid white;
+    outline: 4px solid var(--blue-color);
+}
+.plans-page .plan-box.orange .title {
+    background-color: var(--orange-color);
+    border: 4px solid white;
+    outline: 4px solid var(--orange-color);
+}
+/* -=-=-=--=-=-=- End the Plans Page -=-=-=--=-=-=-  */
