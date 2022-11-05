@@ -1504,4 +1504,77 @@ table tbody td select.rejected {
     border: 4px solid white;
     outline: 4px solid var(--orange-color);
 }
+
+.plans-page .plan-box .price::before {
+    content: "$";
+    position: absolute;
+    left: -20px;
+    top: 0;
+    font-size: 20px;
+    font-weight: normal;
+    color: white;
+}
+
+.plans-page .plan-box .plan-details {
+    border-bottom: 1px solid #eee;
+}
+
+.plans-page .plan-box .plan-details i {
+    width: 14px;
+    height: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plans-page .plan-box .plan-details i.check:first-child {
+    color: var(--green-color);
+    font-size: 18px;
+}
+.plans-page .plan-box .plan-details i.xmark:first-child {
+    color: var(--red-color);
+    font-size: 18px;
+}
+.plans-page .plan-box .plan-details i:last-child {
+    font-size: 13px;
+    margin-left: auto;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: var(--grey-color);
+    color: white;
+}
+
+.plans-page .plan-box.green a {
+    background-color: var(--green-color);
+    z-index: 2;
+}
+.plans-page .plan-box.blue a {
+    background-color: var(--blue-color);
+    z-index: 2;
+}
+.plans-page .plan-box.orange a {
+    background-color: var(--green-color);
+    z-index: 2;
+}
+
+.plans-page .plan-box a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0%;
+    z-index: -1;
+    transition: 0.5s;
+}
+.plans-page .plan-box.green a::before {
+    background-color: #22d864;
+}
+.plans-page .plan-box.blue a::before {
+    background-color: #2e45f0;
+}
+
+.plans-page .plan-box a:hover::before {
+    height: 100%;
+}
 /* -=-=-=--=-=-=- End the Plans Page -=-=-=--=-=-=-  */
