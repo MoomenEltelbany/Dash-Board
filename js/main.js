@@ -25,6 +25,8 @@ let addTaskBtn = document.querySelector(".add-task");
 let titleErrorSpan = document.querySelector(".title-error");
 let textErrorSpan = document.querySelector(".text-error");
 
+let divs = document.querySelectorAll(".task-container .task");
+
 // Array that will hold the tasks
 let arrayOfTasks = [];
 
@@ -58,13 +60,13 @@ addTaskBtn.onclick = () => {
         taskTitle.value = "";
         taskText.value = "";
 
+        console.log(arrayOfTasks);
+
         // Creating the divs
         createDivs(arrayOfTasks);
 
         // Function of deleting the task
         removeDiv(arrayOfTasks);
-
-        console.log(arrayOfTasks);
     }
 };
 
@@ -88,6 +90,10 @@ function createDivs(array) {
             "border-solid",
             "task"
         );
+
+        if (array[i].completed) {
+            mainDiv.classList.add("done");
+        }
 
         mainDiv.setAttribute("data-id", `div_${i}`);
         deleteFigure.setAttribute("data-id", `div_${i}`);
@@ -117,6 +123,14 @@ function removeDiv(array) {
             allTasks.forEach((task) => {
                 if (task.dataset.id === btn.dataset.id) {
                     task.classList.toggle("done");
+                    array.forEach((ele) => {
+                        if (
+                            ele.title ===
+                            task.childNodes[0].childNodes[0].innerHTML
+                        ) {
+                            ele.completed = true;
+                        }
+                    });
                 }
             });
         };
