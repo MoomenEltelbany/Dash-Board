@@ -1,3 +1,16 @@
+// Change the active class on the colors
+let allColors = document.querySelectorAll(".colors span");
+let allColorsArray = Array.from(allColors);
+
+allColorsArray.forEach((element) => {
+    element.onclick = () => {
+        allColorsArray.forEach((element) => {
+            element.classList.remove("active");
+        });
+        element.classList.add("active");
+    };
+});
+
 // Start the welcome count
 let projectCount = document.querySelector(".project-count");
 let moneyCount = document.querySelector(".money-count");

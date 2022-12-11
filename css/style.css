@@ -204,6 +204,7 @@ aside > h2::after {
     margin-right: 5px;
     border: 2px solid white;
     opacity: 0.5;
+    transition: 0.5s;
 }
 
 .sidebar .colors > span.active {
